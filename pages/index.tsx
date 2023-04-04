@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 const neonGreen1 = '#39ff14';
 const neonGreen2 = '#2adddd';
 
-const styles = {
+const styles: { [key: string]: CSSProperties } = {
   container: {
     minHeight: '100vh',
     display: 'flex',
