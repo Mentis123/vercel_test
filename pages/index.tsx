@@ -38,13 +38,13 @@ const styles: { [key: string]: CSSProperties } = {
 const HomePage = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.banner}>Lowly Labs Circus Division</h1>
+      <h1 style={styles.banner}>Lowly Labs Circus Division*</h1>
       <p style={styles.subtitle}>Experience the Magic of the Circus!</p>
       <p style={styles.description}>
-        Welcome to Lowly Labs Circus Division *, where imagination comes to life! Our world-class performers will take you on a mesmerizing journey through a realm of acrobatics, juggling, aerial arts, and more. As you step into our magical circus tent, prepare to be captivated by the dazzling array of talent, skill, and daring feats on display.
+        Welcome to Lowly Labs Circus Division*, where imagination comes to life! Our world-class performers will take you on a mesmerizing journey through a realm of acrobatics, juggling, aerial arts, and more. As you step into our magical circus tent, prepare to be captivated by the dazzling array of talent, skill, and daring feats on display.
       </p>
       <p style={styles.description}>
-        With a mix of traditional circus arts and innovative performances, Lowly Labs Circus Division offers a truly unique and unforgettable experience for all ages. Come join us and let your imagination soar as we transport you to a world of wonder and excitement, filled with breathtaking performances and enchanting surprises around every corner.  (*- PARODY ONLY - There is no Lowly Labs Circus Division!!!)
+        With a mix of traditional circus arts and innovative performances, Lowly Labs Circus Division* offers a truly unique and unforgettable experience for all ages. Come join us and let your imagination soar as we transport you to a world of wonder and excitement, filled with breathtaking performances and enchanting surprises around every corner.  (*- PARODY ONLY - There is no Lowly Labs Circus Division!!!)
       </p>
     </div>
   );
