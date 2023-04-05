@@ -1,10 +1,14 @@
 import React, { CSSProperties } from 'react';
+import Typist from 'react-typist';
+import { motion } from 'framer-motion';
+import Particles from 'react-particles-js';
 
 const neonGreen1 = '#39ff14';
 const neonGreen2 = '#2adddd';
 
 const styles: { [key: string]: CSSProperties } = {
   container: {
+    position: 'relative',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
@@ -12,14 +16,24 @@ const styles: { [key: string]: CSSProperties } = {
     alignItems: 'center',
     background: `linear-gradient(45deg, ${neonGreen1}, ${neonGreen2})`,
     fontFamily: 'Arial, sans-serif',
-    padding: '0 1rem',
+  },
+  particles: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  },
+  content: {
+    position: 'relative',
+    zIndex: 1,
   },
   banner: {
     textAlign: 'center',
     color: 'white',
     fontSize: '3rem',
     fontWeight: 'bold',
-    textShadow: `2px 2px 5px ${neonGreen1}, -2px -2px 5px ${neonGreen2}`,
+textShadow: `2px 2px 5px ${neonGreen1}, -2px -2px 5px ${neonGreen2}`,
   },
   subtitle: {
     marginTop: '1rem',
@@ -36,38 +50,25 @@ const styles: { [key: string]: CSSProperties } = {
   },
 };
 
-const Banner = () => (
-  <h1 style={styles.banner}>Lowly Labs Circus Division*</h1>
-);
-
-const Subtitle = () => (
-  <p style={styles.subtitle}>Experience the Magic of the Circus!</p>
-);
-
-const Description = ({ children }: { children: React.ReactNode }) => (
-  <p style={styles.description}>{children}</p>
-);
-
-const HomePage = () => {
-  return (
-    <div style={styles.container}>
-      <Banner />
-      <Subtitle />
-      <Description>
-  Welcome to Lowly Labs Circus Division*, where imagination comes to life! Our world-class
-  performers will take you on a mesmerizing journey through a realm of acrobatics, juggling,
-  aerial arts, and more. As you step into our magical circus tent, prepare to be captivated by
-  the dazzling array of talent, skill, and daring feats on display.
-</Description>
-<Description>
-  With a mix of traditional circus arts and innovative performances, Lowly Labs Circus Division*
-  offers a truly unique and unforgettable experience for all ages. Come join us and let your
-  imagination soar as we transport you to a world of wonder and excitement, filled with
-  breathtaking performances and enchanting surprises around every corner.  (*- PARODY ONLY -
-  There is no Lowly Labs Circus Division!!!)
-</Description>
-    </div>
-  );
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
 };
+const IndexPage = () => (
+  <div style={styles.container}>
+    <Particles style={styles.particles} />
+    <div style={styles.content}>
+      <motion.h1 style={styles.banner} initial="hidden" animate="visible" variants={fadeInUpVariants}>
+        <Typist>Lowly Labs Circus Division</Typist>
+      </motion.h1>
+      <motion.h2 style={styles.subtitle} initial="hidden" animate="visible" variants={fadeInUpVariants} transition={{ delay: 2 }}>
+        Where imagination meets reality
+      </motion.h2>
+      <motion.p style={styles.description} initial="hidden" animate="visible" variants={fadeInUpVariants} transition={{ delay: 3 }}>
+        Welcome to the Lowly Labs Circus Division, where we combine cutting-edge technology with the artistry of circus performance. Our one-of-a-kind acts blend traditional circus skills with modern innovations, creating unforgettable experiences for audiences of all ages. Step right up and prepare to be amazed by our gravity-defying acrobats, mesmerizing jugglers, and awe-inspiring aerialists. The show is about to begin!
+      </motion.p>
+    </div>
+  </div>
+);
 
-export default HomePage;
+export default IndexPage;
