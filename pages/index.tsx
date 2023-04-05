@@ -12,6 +12,7 @@ const styles: { [key: string]: CSSProperties } = {
     alignItems: 'center',
     background: `linear-gradient(45deg, ${neonGreen1}, ${neonGreen2})`,
     fontFamily: 'Arial, sans-serif',
+    padding: '0 1rem',
   },
   banner: {
     textAlign: 'center',
@@ -53,11 +54,18 @@ const HomePage = () => {
       <Banner />
       <Subtitle />
       <Description>
-        Welcome to Lowly Labs Circus Division*, where imagination comes to life! Our world-class performers will take you on a mesmerizing journey through a realm of acrobatics, juggling, aerial arts, and more. As you step into our magical circus tent, prepare to be captivated by the dazzling array of talent, skill, and daring feats on display.
-      </Description>
-      <Description>
-        With a mix of traditional circus arts and innovative performances, Lowly Labs Circus Division* offers a truly unique and unforgettable experience for all ages. Come join us and let your imagination soar as we transport you to a world of wonder and excitement, filled with breathtaking performances and enchanting surprises around every corner.  (*- PARODY ONLY - There is no Lowly Labs Circus Division!!!)
-      </Description>
+  Welcome to Lowly Labs Circus Division*, where imagination comes to life! Our world-class
+  performers will take you on a mesmerizing journey through a realm of acrobatics, juggling,
+  aerial arts, and more. As you step into our magical circus tent, prepare to be captivated by
+  the dazzling array of talent, skill, and daring feats on display.
+</Description>
+<Description>
+  With a mix of traditional circus arts and innovative performances, Lowly Labs Circus Division*
+  offers a truly unique and unforgettable experience for all ages. Come join us and let your
+  imagination soar as we transport you to a world of wonder and excitement, filled with
+  breathtaking performances and enchanting surprises around every corner.  (*- PARODY ONLY -
+  There is no Lowly Labs Circus Division!!!)
+</Description>
     </div>
   );
 };
