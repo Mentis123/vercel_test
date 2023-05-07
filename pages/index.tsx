@@ -59,13 +59,13 @@ const IndexPage = () => (
     <Particles style={styles.particles} />
     <div style={styles.content}>
       <motion.h1 style={styles.banner} initial="hidden" animate="visible" variants={fadeInUpVariants}>
-        <Typist>Lowly Labs Circus Division</Typist>
+        <Typist>Lowly Land Circus Division</Typist>
       </motion.h1>
       <motion.h2 style={styles.subtitle} initial="hidden" animate="visible" variants={fadeInUpVariants} transition={{ delay: 2 }}>
-        Where imagination meets reality
+        Where imagination Meets Reality
       </motion.h2>
       <motion.p style={styles.description} initial="hidden" animate="visible" variants={fadeInUpVariants} transition={{ delay: 3 }}>
-        Welcome to the Lowly Labs Circus Division, where we combine cutting-edge technology with the artistry of circus performance. Our one-of-a-kind acts blend traditional circus skills with modern innovations, creating unforgettable experiences for audiences of all ages. Step right up and prepare to be amazed by our gravity-defying acrobats, mesmerizing jugglers, and awe-inspiring aerialists. The show is about to begin!
+        Welcome to the Lowly Land Circus Division, where we combine cutting-edge technology with the artistry of circus performance. Our one-of-a-kind acts blend traditional circus skills with modern innovations, creating unforgettable experiences for audiences of all ages. Step right up and prepare to be amazed by our mesmerizing live performances, experiences and interactions. The show is about to begin!
       </motion.p>
     </div>
   </div>
